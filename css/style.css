@@ -45,11 +45,11 @@ body{
 	background: linear-gradient(to right, rgba(108,108,108,1) 0%,rgba(108,108,108,1) 50%,rgba(61,61,61,1) 50%,rgba(61,61,61,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c6c6c', endColorstr='#3d3d3d',GradientType=1 );
 }
-.container:after{
+/*.container:after{
 	content: "";
 	clear: both;
 	display: block;
-}
+}*/
 .logo-block{	
 	background: #6c6c6c;
 	height: 112px;
@@ -179,13 +179,11 @@ select.city{
 	line-height: 1;
 }
 button.download{
-	font-family: "ElektraTextPro_R", sans-serif;
-	font-weight: 400;
+	font: 400 14px "ElektraTextPro_R", sans-serif;
 	display: inline-block;
 	background: #fff;
 	border: 1px solid #f4d50f;
 	color: #000;
-	font-size: 14px;
 	padding: 10px 37px 10px 12px;
 	position: relative;
 	cursor: pointer;
@@ -224,21 +222,21 @@ button.download span{
 	height: 407px;
 	display: flex;
     align-items: center;
+    position: relative;
 }
 .start-section .container{	
 	z-index: 10;
 	position: relative;
 }
 .start-slider .slider-text{
-	font-family: "ElektraTextPro_B", sans-serif;
-	font-weight: 800;
+	font: 800 30px "ElektraTextPro_B", sans-serif;
 	text-transform: uppercase;
-	font-size: 30px;
 	color: #fff;
 	padding: 20px 0 20px 20px;
 	position: relative;
 }
-.start-slider .slider-text .rect{
+.start-slider .slider-text.rect:before{
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -251,10 +249,12 @@ button.download span{
 	position: relative;
     max-width: 374px;
     width: 100%;
+    padding: 30px 0 30px 35px;
 }
 .start-slider .form-container{
 	position: relative;
 	z-index: 10;
+	height: 100%;
 }
 .start-slider .form-bg{
 	z-index: 1;
@@ -262,9 +262,221 @@ button.download span{
     left: 0;
     top: 0;
     height: 100%;
-    width: 39vw;
+    width: 100vw;
     background-color: rgba(255,255,255,.2);
 }
-.start-slider-wrap{
+.start-slider.slick-slide{
 	overflow: hidden;
+}
+form.price{
+	width: 340px;
+	height: 100%;
+	background-color: #fff;
+	text-align: center;
+	padding: 25px 25px 0;
+	-webkit-box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
+	-moz-box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
+	box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
+}
+.form-heading{
+	font: 800 24px "ElektraTextPro_B", sans-serif;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.form-text{
+	color: #333333;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.form-input{
+	height: 44px;
+	line-height: 44px;
+	width: 100%;
+	border: 1px solid #e2e2e2;
+	margin-bottom: 10px;
+	outline: none;
+	padding-left: 20px;
+}
+.submit-btn{
+	font: 400 14px "ElektraTextPro_R", sans-serif;
+	margin: 5px 0 15px;
+	height: 46px;
+	width: 100%;
+	color: #2a2a2a;
+	background-color: #f4d50f;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.31);
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.31);
+}
+.start-slider .control{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.start-slider .control .slick-arrow{
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	line-height: 40px;
+	text-align: center;
+	background-color: rgba(244,213,15,.7);
+	border: none;
+	outline: none;
+	margin: 2px;
+	font-size: 26px;
+	cursor: pointer;
+}
+.start-slider .control .slick-arrow.prev{
+	-o-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+#text{
+	max-width: 848px;
+	width: 100%;
+	padding-top: 40px;
+}
+#sidebar{
+	max-width: 261px;
+	width: 100%;
+}
+#text h2,
+#sidebar h2{
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+}
+#text h2:after,
+#sidebar h2:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 64px;
+	height: 2px;
+	background-color: #cecece;
+	-o-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+#text .video-block .video{
+	position: relative;
+}
+.video-block .play{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-o-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.video-block .play > span{
+	font-size: 16px;
+	color: #fff;
+}
+.play .icon-play{
+	display: inline-block;
+	width: 100%;
+	font-size: 50px;
+	color: #f4d50f;
+	margin-bottom: 10px;
+}
+#sidebar{
+	padding-top: 40px;
+}
+.sidebar-heading{
+	font-size: 18px;
+	color: #333333;
+	line-height: 24px;
+	border-left: 2px solid #f4d50f;
+	padding-left: 10px;
+	margin-bottom: 15px;
+}
+.sidebar-slider{
+	margin-bottom: 40px;
+	position: relative;
+}
+.sidebar-slider .img-box{
+	height: 196px;
+	position: relative;
+}
+.img-box > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#sidebar .thumbnail{
+	display: block;
+	height: 320px;
+}
+#sidebar .thumbnail .caption{
+	padding: 45px 10px 0;
+	background-color: #f4d50f;
+	color: #333333;
+	height: 100%;
+}
+#sidebar .caption .caption-heading{
+	width: 100%;
+	display: inline-block;
+	font: 800 16px "ElektraTextPro_B", sans-serif;
+	margin-bottom: 10px;
+}
+#sidebar .caption .text{
+	font-size: 14px;
+}
+#sidebar .caption .text .num{
+	font-size: 20px; 
+}
+.sidebar-slider .slick-arrow{
+	position: absolute;
+	bottom: 2px;
+	width: 30px;
+	height: 30px;
+	background: #ffdf40;
+	font-size: 20px;
+	text-align: center;
+	line-height: 32px;
+	cursor: pointer;
+}
+.sidebar-slider .slick-arrow.next{
+	right: 0;
+}
+.sidebar-slider .slick-arrow.prev{
+	right: 32px;
+	z-index: 1;
+	-o-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+.reviews .message{
+	font-size: 16px;
+	margin-top: 10px;
+	font-style: italic;
+	font-weight: 200;
+}
+#sidebar .partners ul{
+	text-align: center;
+}
+#sidebar .partners ul > li{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 25px;
+	border: 1px solid #d7d7d7;
 }
