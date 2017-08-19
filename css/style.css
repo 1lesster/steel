@@ -705,6 +705,12 @@ form.price{
 	font-size: 15px;
 	margin-bottom: 20px;
 }
+.footer-logo .logo{
+	width: 210px;
+}
+.footer-logo .logo > img{
+	width: 100%;
+}
 .footer-logo > span{
 	width: 150px;
 	font-size: 11px;
