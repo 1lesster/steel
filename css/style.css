@@ -46,6 +46,18 @@ body{
     -webkit-justify-content: space-between;
     justify-content: space-between;   
 }
+.flex-center{	 
+	-webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
 .top-header, .footer{
 	background: rgb(108,108,108);
 	background: -moz-linear-gradient(left, rgba(108,108,108,1) 0%, rgba(108,108,108,1) 50%, rgba(61,61,61,1) 50%, rgba(61,61,61,1) 100%);
@@ -273,18 +285,18 @@ button.more > i{
 	background: #f4d50f;
 	z-index: -1;
 }
-.start-slider .form-block{
+.start-section .form-block{
 	position: relative;
     max-width: 374px;
     width: 100%;
     padding: 30px 0 30px 35px;
 }
-.start-slider .form-container{
+.start-section .form-container{
 	position: relative;
 	z-index: 10;
 	height: 100%;
 }
-.start-slider .form-bg{
+.start-section .form-bg{
 	z-index: 1;
     position: absolute;
     left: 0;
@@ -305,7 +317,7 @@ button.more > i{
 .start-slider.slick-slide{
 	overflow: hidden;
 }
-form.price{
+.start-form{
 	width: 340px;
 	height: 100%;
 	background-color: #fff;
@@ -315,17 +327,17 @@ form.price{
 	-moz-box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
 	box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
 }
-.form-heading{
+.start-form .form-heading{
 	font: 800 24px "ElektraTextPro_B", sans-serif;
 	color: #333333;
 	margin-bottom: 10px;
 }
-.form-text{
+.start-form .form-text{
 	color: #333333;
 	font-size: 22px;
 	margin-bottom: 10px;
 }
-.form-input{
+.start-form .form-input{
 	height: 44px;
 	line-height: 44px;
 	width: 100%;
@@ -334,7 +346,7 @@ form.price{
 	outline: none;
 	padding-left: 20px;
 }
-.submit-btn{
+.start-form .submit-btn{
 	font: 400 14px "ElektraTextPro_R", sans-serif;
 	margin: 5px 0 15px;
 	height: 46px;
@@ -830,7 +842,6 @@ section h2:after{
 }
 .catalog-page .thumbnail{
 	background-color: #f2f2f2;
-	height: 325px;
 }
 .catalog-page .thumbnail:hover,
 .catalog-page .thumbnail:hover > button{
@@ -839,8 +850,7 @@ section h2:after{
 .thumbnail-block .thumbnail .img-box{
 	padding: 15px 10px 0;
 }
-.thumbnail-block .thumbnail .caption{	
-	border-bottom: 2px solid #fff;
+.thumbnail-block .thumbnail .caption{		
 	color: #333333;
 }
 .thumbnail-block .thumbnail > button{
@@ -850,14 +860,91 @@ section h2:after{
 	border: none;
 	outline: none;
 	cursor: pointer;
+	position: relative;
+	padding-right: 30px;
+}
+.thumbnail-block .thumbnail > button .icon{
+	position: absolute;
+    top: 50%;
+    right: 28%;
+    width: 21px;
+    height: 26px;
+    background: url(../img/pdf.png) 0 0 repeat;
+    -o-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.thumbnail-block .thumbnail img{
+	display: inline-block;
+    height: 130px;
+    width: auto;
+    object-fit: contain;
 }
 .thumbnail-block .thumbnail .caption .name{
 	width: 100%;
 	display: block;
 	text-align: center;
+	margin: 10px 0;
 	font: 800 16px "ElektraTextPro_B", sans-serif;
 }
 .thumbnail-block .thumbnail .caption > p{
 	font-size: 14px;
+}
+.catalog-page .thumbnail-inner{
+	position: relative;	
 	padding: 5px 5px 10px 17px;
+	height: 325px;
+	flex-direction: column;
+	border-bottom: 2px solid #fff;
+}
+.catalog-page .sub-thumb{
+	flex-direction: column;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(243,221,83,.8);
+}
+.sub-thumb > a{
+	color: #333333;
+	font-size: 16px;
+	display: block;
+	margin: 8px 0;
+}
+.catalog-page .thumbnail:hover .sub-thumb{
+	display: flex;
+}
+.start-section.gilyatina-page{
+	position: relative;
+	background: url('../img/giyatina-bg.jpg') 0 0 no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.start-section.gilyatina-page #crumbs{
+	margin-top: 25px;
+	color: #fff;
+}
+.start-section.gilyatina-page #crumbs > a{
+	color: #fff;
+}
+.gilyatina-start{
+	padding-top: 50px;
+	color: #fff;
+}
+.gilyatina-start > img{
+	float: left;
+}
+.gilyatina-start h3{
+	font: 800 38px "ElektraTextPro_B", sans-serif;
+	margin-bottom: 5px;
+}
+.gilyatina-start p{
+	display: block;
+	float: left;
+}
+.start-section.gilyatina-page .start-form .form-heading{
+	font-size: 18px;
 }
