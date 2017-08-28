@@ -350,8 +350,8 @@ button.more > i{
 	outline: none;
 	padding-left: 20px;
 }
-.start-form .submit-btn,
-form.question .submit-btn {
+.submit-btn,
+.submit-btn {
 	font: 400 14px "ElektraTextPro_R", sans-serif;
 	margin: 5px 0 25px;
 	height: 46px;
@@ -1245,20 +1245,23 @@ section h2:after{
 	display: block;
 }
 form.question{
-	margin-bottom: 45px;
-	padding: 35px 45px 10px;
+	margin-bottom: 45px;	
+}
+form.inline-form{
+	padding: 35px 45px 18px;
 	width: 100%;
 	-webkit-box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
 	-moz-box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
 	box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
 }
-form.question .form-heading{
+form.question .form-heading,
+form.review-form .form-heading{
 	margin-bottom: 25px;
 	text-align: center;
 	color: #333333;
 	font: 800 20px "ElektraTextPro_B", sans-serif;
 }
-form.question > input{
+.form-input{
 	height: 44px;
     line-height: 44px;
     width: 220px;
@@ -1266,9 +1269,101 @@ form.question > input{
     margin-bottom: 10px;
     margin-right: 10px;
     outline: none;
+    font-size: 12px;
+    color: #939393;
     padding-left: 20px;
 }
 form.question > .submit-btn{
 	width: 220px;
 	margin-left: 30px;
+}
+.tetra-block .dark-grey .partner-img{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	margin: 10px 4px;
+}
+.partner-img img{
+	display: inline-block;
+}
+.heading-block.coments{
+	margin-top: 20px;
+}
+.heading-block.coments > img{
+	display: block;
+}
+.heading-block.coments .text-block{
+	color: #373737;
+}
+.heading-block.coments .text-block h4{
+	font: 800 38px "ElektraTextPro_B", sans-serif;
+	margin-bottom: 10px;
+	padding-top: 25px;
+}
+.heading-block.coments .text-block p{
+	font-size: 16px;
+	line-height: 26px;
+	display: block;
+}
+.upper{
+	text-transform: uppercase;
+}
+form.review-form{
+	margin: 30px 0;
+}
+form.review-form .flex-between{
+	align-items: center;
+}
+.review-form .submit-btn{
+	width: 220px;
+	margin: 0;
+}
+.input-block{
+	width: 60%;
+}
+.review-form input{
+	margin: 0 0 15px 0;
+}
+.input-block textarea{
+	width: 100%;
+	min-height: 44px;
+	max-width: 100%;
+	padding-left: 20px;
+	padding-top: 13px;
+}
+.input-block > input.name{
+	float: left;
+}
+.input-block > input.company{
+	float: right;
+}
+.user-review{
+	border: 1px solid #fbc743;
+	padding: 40px 20px;
+	color: #373737;
+	font-size: 16px;
+	margin-bottom: 20px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.user-review .user-icon{
+	margin-right: 20px;
+}
+.user-review .user-icon i{
+	color: #7f7f7f;
+	font-size: 47px;
+}
+.user-review .user-name{
+	margin-bottom: 8px;
+}
+.user-review .user-company{
+	font: 800 16px "ElektraTextPro_B";
+	margin-bottom: 15px;
+}
+.user-review .review{
+	font-size: 16px;
+	font-style: italic;
 }

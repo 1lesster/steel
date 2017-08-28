@@ -115,7 +115,7 @@
 								<div class="form-text">11 Августа 2017 <i class="demo-icon icon-time"></i> 10:28</div>
 								<input class="form-input" type="text" placeholder="Имя">
 								<input class="form-input" type="tel" placeholder="Телефон">
-								<button class="submit-btn" tyle="submit">Скачать прайс лист</button>
+								<button class="submit-btn" type="submit">Скачать прайс лист</button>
 								<div class="form-text">Всегда самая низкая цена</div>
 							</form>							
 						</div>
@@ -136,7 +136,7 @@
 								<div class="form-text">11 Августа 2017 <i class="demo-icon icon-time"></i> 10:28</div>
 								<input class="form-input" type="text" placeholder="Имя">
 								<input class="form-input" type="tel" placeholder="Телефон">
-								<button class="submit-btn" tyle="submit">Скачать прайс лист</button>
+								<button class="submit-btn" type="submit">Скачать прайс лист</button>
 								<div class="form-text">Всегда самая низкая цена</div>
 							</form>
 						</div>
@@ -157,7 +157,7 @@
 								<div class="form-text">11 Августа 2017 <i class="demo-icon icon-time"></i> 10:28</div>
 								<input class="form-input" type="text" placeholder="Имя">
 								<input class="form-input" type="tel" placeholder="Телефон">
-								<button class="submit-btn" tyle="submit">Скачать прайс лист</button>
+								<button class="submit-btn" type="submit">Скачать прайс лист</button>
 								<div class="form-text">Всегда самая низкая цена</div>
 							</form>
 						</div>
@@ -693,38 +693,5 @@
 			</div>
 		</div>
 	</footer>
-	<script  type="text/javascript">
-		$( document ).ready(function() {
-		    $('.start-slider-wrap').slick({
-		    	draggable: false,
-		    	appendArrows: $('.control'),
-		    	nextArrow: '<i class="slick-arrow demo-icon icon-arrow next"></i>',
-		    	prevArrow: '<i class="slick-arrow demo-icon icon-arrow prev"></i>'
-		    });
-		    $('.hot-offers .sidebar-slider').slick({
-		    	draggable: false,
-		    	nextArrow: '<i class="slick-arrow demo-icon icon-arrow next"></i>',
-		    	prevArrow: '<i class="slick-arrow demo-icon icon-arrow prev"></i>'
-		    });
-		    $('.reviews .sidebar-slider').slick({
-		    	draggable: false,
-		    	nextArrow: '<i class="slick-arrow demo-icon icon-arrow next"></i>',
-		    	prevArrow: '<i class="slick-arrow demo-icon icon-arrow prev"></i>'
-		    });
-
-		    $(".catalog-nav a").click(function(event) {
-		        event.preventDefault();
-		        $(this).parent().addClass("current");
-		        $(this).parent().siblings().removeClass("current");
-		        var tab = $(this).attr("href");
-		        $(".catalog-content").not(tab).css("display", "none");
-		        $(tab).fadeIn();
-		    });
-
-		    var navHeight = $('.catalog-nav').height();
- 			$('.catalog-content').css("height", navHeight);
-
-		});
-	</script>
 </body>
 </html>
