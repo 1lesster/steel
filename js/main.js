@@ -16,6 +16,12 @@ $( document ).ready(function() {
     	prevArrow: '<i class="slick-arrow demo-icon icon-arrow prev"></i>'
     });
 
+    $('.certificate-slider').slick({
+        draggable: false,
+        nextArrow: '<i class="slick-arrow demo-icon icon-arrow next"></i>',
+        prevArrow: '<i class="slick-arrow demo-icon icon-arrow prev"></i>'
+    });
+
     $(".catalog-nav a").click(function(event) {
         event.preventDefault();
         $(this).parent().addClass("current");

@@ -264,6 +264,10 @@ button.more > i{
     align-items: center;
     position: relative;
 }
+.start-section{
+	overflow: hidden;
+	position: relative;
+}
 .start-section .container{	
 	z-index: 10;
 	position: relative;
@@ -319,7 +323,7 @@ button.more > i{
 }
 .start-form{
 	width: 340px;
-	height: 100%;
+	overflow: hidden;
 	background-color: #fff;
 	text-align: center;
 	padding: 25px 25px 0;
@@ -346,9 +350,10 @@ button.more > i{
 	outline: none;
 	padding-left: 20px;
 }
-.start-form .submit-btn{
+.start-form .submit-btn,
+form.question .submit-btn {
 	font: 400 14px "ElektraTextPro_R", sans-serif;
-	margin: 5px 0 15px;
+	margin: 5px 0 25px;
 	height: 46px;
 	width: 100%;
 	color: #2a2a2a;
@@ -359,6 +364,9 @@ button.more > i{
 	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.31);
 	-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.31);
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.31);
+}
+.start-form .form-text:last-child{
+	margin-bottom: 25px;
 }
 .start-slider .control{
 	position: absolute;
@@ -411,6 +419,7 @@ section h2,
 	padding-bottom: 15px;
 	margin-bottom: 25px;
 }
+
 #text h2:after,
 #sidebar h2:after,
 section h2:after{
@@ -496,7 +505,8 @@ section h2:after{
 #sidebar .caption .text .num{
 	font-size: 20px; 
 }
-.sidebar-slider .slick-arrow{
+.sidebar-slider .slick-arrow,
+.certificate-slider .slick-arrow{
 	position: absolute;
 	bottom: 2px;
 	width: 30px;
@@ -507,10 +517,12 @@ section h2:after{
 	line-height: 32px;
 	cursor: pointer;
 }
-.sidebar-slider .slick-arrow.next{
+.sidebar-slider .slick-arrow.next,
+.certificate-slider .slick-arrow.next{
 	right: 0;
 }
-.sidebar-slider .slick-arrow.prev{
+.sidebar-slider .slick-arrow.prev,
+.certificate-slider .slick-arrow.prev{
 	right: 32px;
 	z-index: 1;
 	-o-transform: rotate(-180deg);
@@ -577,7 +589,8 @@ section h2:after{
 .reasons-text-block{
 	padding-right: 10px;
 }
-.reasons-text-block > .text > i{
+.reasons-text-block > .text > i,
+.gilyatina-advantages > li > i{
 	margin-right: 7px;
 	color: #f4d50f;
 	font-size: 16px;
@@ -830,11 +843,11 @@ section h2:after{
 	color: #f3dd53;
 	margin: 0 -5px;
 }
-.catalog-page {
-	overflow: hidden;
+.row {
 	margin: 0 -15px;
+	overflow: hidden;
 }
-.catalog-page .thumbnail-block{
+.col-3{
 	width: 25%;
 	float: left;
 	padding: 0 15px;
@@ -847,13 +860,13 @@ section h2:after{
 .catalog-page .thumbnail:hover > button{
 	background-color: #f3dd53;
 }
-.thumbnail-block .thumbnail .img-box{
+.catalog-page .thumbnail .img-box{
 	padding: 15px 10px 0;
 }
-.thumbnail-block .thumbnail .caption{		
+.catalog-page .thumbnail .caption{		
 	color: #333333;
 }
-.thumbnail-block .thumbnail > button{
+.catalog-page .thumbnail > button{
 	background-color: #f2f2f2;
 	width: 100%;
 	height: 39px;
@@ -863,7 +876,7 @@ section h2:after{
 	position: relative;
 	padding-right: 30px;
 }
-.thumbnail-block .thumbnail > button .icon{
+.thumbnail > button .icon{
 	position: absolute;
     top: 50%;
     right: 28%;
@@ -875,20 +888,20 @@ section h2:after{
     -moz-transform: translate(0, -50%);
     transform: translate(0, -50%);
 }
-.thumbnail-block .thumbnail img{
+.catalog-page .thumbnail img{
 	display: inline-block;
     height: 130px;
-    width: auto;
+    width: 100%;
     object-fit: contain;
 }
-.thumbnail-block .thumbnail .caption .name{
+.thumbnail .caption .name{
 	width: 100%;
 	display: block;
 	text-align: center;
 	margin: 10px 0;
 	font: 800 16px "ElektraTextPro_B", sans-serif;
 }
-.thumbnail-block .thumbnail .caption > p{
+.thumbnail .caption > p{
 	font-size: 14px;
 }
 .catalog-page .thumbnail-inner{
@@ -921,18 +934,18 @@ section h2:after{
 	position: relative;
 	background: url('../img/giyatina-bg.jpg') 0 0 no-repeat;
 	background-size: cover;
-	overflow: hidden;
 }
-.start-section.gilyatina-page #crumbs{
+.start-section #crumbs{
 	margin-top: 25px;
 	color: #fff;
 }
-.start-section.gilyatina-page #crumbs > a{
+.start-section #crumbs > a{
 	color: #fff;
 }
 .gilyatina-start{
-	padding-top: 50px;
+	padding: 50px 0;
 	color: #fff;
+	overflow: hidden;
 }
 .gilyatina-start > img{
 	float: left;
@@ -947,4 +960,315 @@ section h2:after{
 }
 .start-section.gilyatina-page .start-form .form-heading{
 	font-size: 18px;
+}
+.tablepress{
+	width: 100%;
+	color: #000;
+	line-height: 37px;
+	margin-bottom: 20px;
+}
+.tablepress td{	
+	background-color: #e7e7e7;
+}
+.tablepress th{
+	background-color: #000;
+	color: #fff;
+	font-weight: 400;
+}
+.tablepress tr > td:first-child{
+	width: 70%;
+	padding-left: 60px;
+}
+.tablepress tr > td:last-child{
+	text-align: center;
+}
+.gilyatina-advantages > li{
+	line-height: 57px;
+	color: #333;
+	padding-left: 20px;
+	border: 1px solid #fbc743;
+	margin-bottom: 8px;
+}
+.gilyatina-advantages > li:hover{
+	background-color: #000;
+	border: 1px solid #000;
+	color: #fff;
+}
+.gilyatina-cutting{
+	overflow: hidden;
+	margin: 20px 0;
+}
+.gilyatina-cutting .icon-block{
+	margin-right: 10px;
+}
+.gilyatina-cutting p{
+	line-height: 22px;
+	font-size: 18px;
+}
+.gilyatina-services {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.gilyatina-services  i{
+	font-size: 67px;
+	float: left;
+	color: #f4d50f;
+	margin-right: 25px;
+}
+.gilyatina-services p{
+	font-size: 18px;
+}
+.thumbnail.for-sale .thumbnail-inner{
+	height: 310px;
+	background-color: #373737;
+	border-bottom: 2px solid #fff;
+}
+.thumbnail.for-sale .thumbnail-inner > img{
+	height: 196px;
+	width: 100%;
+	object-fit: cover;
+}
+.thumbnail.for-sale .caption{
+	color: rgba(255,255,255,.9);
+	padding: 30px 10px 10px;
+}
+.thumbnail.for-sale .caption > .caption-heading{
+	font: 800 16px "ElektraTextPro_B", sans-serif;
+	display: inline-block;
+	margin-bottom: 8px;
+}
+.thumbnail.for-sale .caption > .text > span{
+	font-size: 20px;
+}
+.thumbnail.for-sale > button{
+	background-color: #f4d50f;
+    width: 100%;
+    height: 39px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333333;
+}
+.about-page .start-form .form-heading{
+	font-size: 16px;
+}
+.start-section.about-page{
+	background: url('../img/about-page-bg.jpg') 0 0 no-repeat;
+	background-size: cover;
+}
+.start-section.about-page .about-start{
+	min-height: 450px;
+	width: 100%;
+	position: relative;
+}
+.play-block{
+	z-index: 20;
+	cursor: pointer;	
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-o-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.play-block > i{
+	color: #f4d50f;
+	font-size: 66px;
+}
+.play-block > span{
+	color: #fff;
+	font-size: 16px;
+	display: block;
+	margin-top: 5px;
+}
+.reasons-box.custom{
+	padding: 0 5px 0 13px;
+}
+.reasons-box.custom p{
+	font-size: 14px;
+}
+.factories-block{
+	margin-bottom: 30px;
+	text-align: center;
+}
+.factories-block .factories{
+	display: inline-block;
+	margin: 0 25px;
+}
+.factories-block .factories span{
+	color: #373737;
+	font: 800 30px "ElektraTextPro_B", sans-serif;
+	vertical-align: middle;
+}
+.factories-block .factories .icon{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background-color: #f4d50f;
+	vertical-align: middle;
+	line-height: 40px;
+	margin-right: 5px;
+}
+.factories-block .factories .icon i{
+	color: #fff;
+	font-size: 20px;
+}
+.tetra-block{
+	display: block;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+.tetra-block > li{
+	display: block;
+	float: left;
+	width: 50%;
+	height: 395px;
+	position: relative;
+}
+.tetra-block > li.dark-grey{
+	background: url('../img/tetra-bg-1.jpg') 0 0 no-repeat;
+	padding: 35px 20px; 
+	color: #ffffff;
+}
+.tetra-block > li.grey{
+	background: #ebebeb;
+	padding: 65px 0 0 15px;
+	font-size: 20px;
+	color: #373737;
+}
+.caret-grey:before {
+	content: '';
+	position: absolute;
+	top: 50%; 
+	left: -20px;
+	border-right: 20px solid #ebebeb;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	-o-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+.tetra-block h4{
+	font-size: 24px;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font-weight: 400;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+}
+.tetra-block h4:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 64px;
+    height: 2px;
+    background-color: #cecece;
+    -o-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.tetra-block .quote-block{
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.tetra-block .quote-block .num{
+	width: 140px;
+	text-align: right;
+	color: #f4d50f;
+	font-size: 24px;
+	float: left;
+	margin-right: 10px;
+}
+.tetra-block .quote-block p{
+	color: #fff;
+	font-size: 16px;
+}
+.tetra-block > li.yellow{
+	padding-top: 95px;
+	background-color: #f4d50f;
+	color: #373737;
+	font-size: 24px;
+}
+.tetra-block > li.yellow h4:after{
+	background-color: #958623;
+}
+.yellow-grey:before {
+	content: '';
+  	position: absolute;
+  	right: -18px;
+  	top: 50%;
+  	border-left: 19px solid #f4d50f;
+  	border-top: 19px solid transparent;
+  	border-bottom: 19px solid transparent;
+	-o-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	z-index: 2;
+}
+.certificate-slider{
+	position: relative;
+	text-align: center;
+	height: 100%;
+}
+.certificate-slider .certificate > img{
+	display: inline-block;
+}
+.certificate-slider .certificate{
+	position: relative;
+}
+.tetra-block > li.yellow h4{
+	position: absolute;
+	top: 10px;
+}
+.tetra-block > li .zoom{
+	display: none;
+	cursor: pointer;
+	z-index: 10;
+	font-size: 65px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-o-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.certificate-slider:hover .zoom{
+	display: block;
+}
+form.question{
+	margin-bottom: 45px;
+	padding: 35px 45px 10px;
+	width: 100%;
+	-webkit-box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
+	-moz-box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
+	box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
+}
+form.question .form-heading{
+	margin-bottom: 25px;
+	text-align: center;
+	color: #333333;
+	font: 800 20px "ElektraTextPro_B", sans-serif;
+}
+form.question > input{
+	height: 44px;
+    line-height: 44px;
+    width: 220px;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    outline: none;
+    padding-left: 20px;
+}
+form.question > .submit-btn{
+	width: 220px;
+	margin-left: 30px;
 }
