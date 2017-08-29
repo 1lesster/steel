@@ -32,6 +32,6 @@ $( document ).ready(function() {
     });
 
     var navHeight = $('.catalog-nav').height();
-		$('.catalog-content').css("height", navHeight);
+    $('.catalog-content').css("height", navHeight);
 
 });

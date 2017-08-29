@@ -853,6 +853,12 @@ section h2:after{
 	padding: 0 15px;
 	margin-bottom: 35px;
 }
+.col-6{
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+	margin-bottom: 35px;
+}
 .catalog-page .thumbnail{
 	background-color: #f2f2f2;
 }
@@ -1190,11 +1196,13 @@ section h2:after{
 	color: #fff;
 	font-size: 16px;
 }
-.tetra-block > li.yellow{
+.tetra-block.about-company > li.yellow{
 	padding-top: 95px;
-	background-color: #f4d50f;
-	color: #373737;
 	font-size: 24px;
+}
+.tetra-block > li.yellow{	
+	background-color: #f4d50f;
+	color: #373737;	
 }
 .tetra-block > li.yellow h4:after{
 	background-color: #958623;
@@ -1224,7 +1232,7 @@ section h2:after{
 .certificate-slider .certificate{
 	position: relative;
 }
-.tetra-block > li.yellow h4{
+.tetra-block.about-company > li.yellow h4{
 	position: absolute;
 	top: 10px;
 }
@@ -1249,13 +1257,16 @@ form.question{
 }
 form.inline-form{
 	padding: 35px 45px 18px;
+	margin: 30px 0;
 	width: 100%;
 	-webkit-box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
 	-moz-box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
 	box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.48);
 }
 form.question .form-heading,
-form.review-form .form-heading{
+form.review-form .form-heading,
+form.delivery-form .form-heading,
+form.contacts-form .form-heading{
 	margin-bottom: 25px;
 	text-align: center;
 	color: #333333;
@@ -1295,8 +1306,9 @@ form.question > .submit-btn{
 .heading-block.coments .text-block{
 	color: #373737;
 }
-.heading-block.coments .text-block h4{
-	font: 800 38px "ElektraTextPro_B", sans-serif;
+.heading-block.coments .text-block h4,
+.heading-block.delivery .text-block h4{
+	font: 800 36px "ElektraTextPro_B", sans-serif;
 	margin-bottom: 10px;
 	padding-top: 25px;
 }
@@ -1308,20 +1320,20 @@ form.question > .submit-btn{
 .upper{
 	text-transform: uppercase;
 }
-form.review-form{
-	margin: 30px 0;
-}
-form.review-form .flex-between{
+form.review-form .flex-between,
+form.delivery-form .flex-between{
 	align-items: center;
 }
-.review-form .submit-btn{
+.review-form .submit-btn,
+.delivery-form .submit-btn{
 	width: 220px;
 	margin: 0;
 }
 .input-block{
 	width: 60%;
 }
-.review-form input{
+.review-form input,
+.delivery-form input{
 	margin: 0 0 15px 0;
 }
 .input-block textarea{
@@ -1330,11 +1342,12 @@ form.review-form .flex-between{
 	max-width: 100%;
 	padding-left: 20px;
 	padding-top: 13px;
+	border: 1px solid #e2e2e2;
 }
-.input-block > input.name{
+.pull-left{
 	float: left;
 }
-.input-block > input.company{
+.pull-right{
 	float: right;
 }
 .user-review{
@@ -1366,4 +1379,273 @@ form.review-form .flex-between{
 .user-review .review{
 	font-size: 16px;
 	font-style: italic;
+}
+.heading-block.delivery{
+	margin-top: 20px;
+	color: #373737;
+}
+.heading-block.delivery .time{	
+	font: 800 20px "ElektraTextPro_B", sans-serif;
+	vertical-align: middle;
+}
+.heading-block.delivery .time i{
+	color: #f4d50f;
+	font-size: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.delivery-form input.address{
+	width: 100%;
+}
+.tetra-block.delivery li.dark-grey{
+	background: #373737;
+	font-size: 20px;
+	color: rgba(255,255,255,.9);
+}
+.tetra-block.delivery li.dark-grey h4{
+	font-size: 30px;
+}
+.tetra-block.delivery .caret-grey:before{
+    border-right: 20px solid #373737;
+}
+.tetra-block.delivery li.image-one{
+	background: url('../img/delivery-1.jpg') 0 0 no-repeat;
+	background-size: cover;
+}
+.tetra-block.delivery li.image-two{
+	background: url('../img/delivery-2.jpg') 0 0 no-repeat;
+	background-size: cover;
+}
+.tetra-block.delivery li.yellow{
+	padding: 40px 0 0 10px;
+	font-size: 20px;
+}
+.tetra-block.delivery li.yellow h4{
+	font-size: 30px;
+}
+p.custom{
+	color: #373737;
+	font-size: 20px;
+	margin-bottom: 35px;
+}
+.delivery-payment{
+	overflow: hidden;
+}
+.delivery-payment .payment-type{
+	float: left;
+	width: 50%;
+	margin-bottom: 20px;
+}
+.delivery-payment .icon-block{
+	text-align: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.delivery-payment .icon-block i{
+	display: inline-block;
+	color: #f4d50f;
+	font-size: 90px;
+}
+.delivery-payment .payment-type .heading{
+	font: 800 20px "ElektraTextPro_B", sans-serif;
+	color: #373737;
+	margin-bottom: 10px;
+	display: block;
+}
+.delivery-payment .payment-type li{
+	font-size: 15px;
+	color: #333;
+	display: block;
+	width: 100%;
+}
+.delivery-payment .payment-type li:before{
+	content: '';
+	display: inline-block;
+	background: #f4d50f;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.vacancies-heading,
+.contacts-heading{
+	font: 800 38px "ElektraTextPro_B", sans-serif;
+	color: #373737;
+	margin: 25px 0 15px;
+}
+.vacancies-type{
+	margin-bottom: 20px;
+}
+.vacancies-type > button{
+	color: #373737;
+	font-size: 16px;
+	border: 1px solid #fbc743;
+	width: 260px;
+	outline: none;
+	height: 43px;
+	background: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.vacancies-type > button.active{
+	background: #fbc743;
+}
+.vacancies-type > button:not(:last-child){
+	margin-right: 30px;
+}
+.vacancies-title > i{
+	color: #fbc743;
+	font-size: 32px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.vacancies-title > p{
+	color: #373737;
+	font: 800 24px "ElektraTextPro_B", sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+}
+.vacancies-info{
+	margin-top: 15px;
+	padding: 0 0 50px 45px; 
+	color: #373737;
+	position: relative;
+	font-size: 16px;
+	line-height: 24px;
+}
+.vacancies-icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fbc743;
+	font-size: 32px;
+}
+.vacancies-info > p,
+.vacancies-info > ul,
+.vacancies-info ol{
+	margin-bottom: 15px;
+}
+.vacancies-info  .list-heading{
+	font: 800 16px "ElektraTextPro_B", sans-serif;
+	margin-bottom: 5px;
+}
+.vacancies-info ul > li{
+	position: relative;
+	padding-left: 15px;
+}
+.vacancies-info ul > li > a{
+	color: inherit;
+}
+.vacancies-info ul > li:before{
+	content: '';
+	position: absolute;
+	top: 8px;
+	left: 0;
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #fbc743;
+}
+.vacancies-info ol > li{
+	list-style: decimal;
+	margin-left: 20px;
+}
+p.strong{
+	font: 800 16px "ElektraTextPro_B", sans-serif;
+	margin: 0;
+	line-height: 24px;
+}
+p.strong > a{
+	color: #fbc743;
+}
+form.contacts-form{
+	overflow: hidden;
+	text-align: center;
+	padding: 30px 70px;
+	margin: 30px 0 45px;
+}
+form.contacts-form input{
+	float: left;
+}
+form.contacts-form textarea{
+	max-width: 450px;
+	width: 100%;
+	min-height: 44px;
+    padding-left: 20px;
+    padding-top: 13px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #e2e2e2;
+    float: left;
+}
+form.contacts-form .submit-btn{
+	width: 220px;
+	margin: 0;
+	float: left;
+}
+.contacts-box{
+	border: 1px solid #f6db30;
+	padding:  25px 0 10px 45px;
+	color: #373737;
+	height: 175px;
+}
+.contacts-box .title{
+	font: 800 16px "ElektraTextPro_B", sans-serif;
+	margin-bottom: 20px;
+}
+.contacts-box i{
+	color: #f6db30;
+	font-size: 25px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.contacts-box .tels,
+.contacts-box .mails{
+	display: inline-block;
+	vertical-align: middle;
+}
+.contacts-box .tel-block,
+.contacts-box .mail-block{
+	margin-bottom: 15px;
+}
+.contacts-box .tels span,
+.contacts-box .mails span{
+	display: block;
+	font-size: 16px;
+}
+.social .title{
+	font: 800 20px "ElektraTextPro_B", sans-serif;
+}
+.social{
+	margin-bottom: 35px;
+}
+.social > p{
+	font-size: 16px;
+	color: #373737;
+}
+.social ul{
+	margin: 15px 0;
+}
+.social ul > li{
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	border: 1px solid #f6db30;
+	margin-right: 10px;
+}
+.social ul > li > a{
+	color: #f6db30;
+	height: 100%;
+}
+.map-block{
+	height: 450px;
+	margin-bottom: 40px;
+}
+.gmnoprint{
+	display: none;
 }
