@@ -262,7 +262,6 @@ button.more > i{
 .start-slider .text-block{
 	width: 100%;
 	max-width: 765px;
-	height: 407px;
 	display: flex;
     align-items: center;
     position: relative;
@@ -639,25 +638,25 @@ section h2:after{
 	width: calc(100% - 208px);
 	overflow-y: auto; 
 }
-.catalog-content table{
+table.black-grey{
 	width: 100%;
 	font-size: 14px;
 }
-.catalog-content table thead td{
+table.black-grey thead td{
 	background-color: #000000;
 	color: #fff;
 	font-weight: 400;
 }
-.catalog-content table tr > td:first-child{
+table.black-grey tr > td:first-child{
 	text-align: left;
 	padding-left: 23px;
 }
-.catalog-content table td{
-	line-height: 30px;
+table.black-grey td{
+	height: 35px;
 	background-color: #e7e7e7;
 	text-align: center;
 }
-.catalog-nav .percent{
+.percent{
 	display: inline-block;
 	width: 25px;
 	height: 25px;
@@ -852,6 +851,12 @@ section h2:after{
 }
 .col-3{
 	width: 25%;
+	float: left;
+	padding: 0 15px;
+	margin-bottom: 35px;
+}
+.col-4{
+	width: 33.33333333%;
 	float: left;
 	padding: 0 15px;
 	margin-bottom: 35px;
@@ -1651,4 +1656,193 @@ form.contacts-form .submit-btn{
 }
 .gmnoprint{
 	display: none;
+}
+.start-section.one-category{
+	background: url('../img/one-category-bg1.jpg') 0 0 no-repeat;
+	max-height: 430px;
+}
+.start-section.one-category .start-heading{
+	padding-top: 15px;
+	overflow: hidden;
+}
+.start-section.one-category .start-heading h3{
+	font: 800 38px "ElektraTextPro_B", sans-serif;
+	color: rgba(255,255,255,.9);
+	float: left;
+	margin: 40px 0 0 10px;
+}
+.start-section.one-category .description{
+	padding: 25px 15px;
+	color: rgba(255,255,255,.9);
+	background: rgba(55,55,55,.7);
+}
+.free-deliv{
+	font: 800 16px "ElektraTextPro_B", sans-serif;
+	color: #333333;
+}
+.free-deliv span{
+	text-transform: uppercase;
+}
+.free-deliv i{
+	color: #f4d50f;
+	font-size: 28px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.with-discount{
+	text-align: center;
+	margin-bottom: 35px;
+}
+.with-discount button.submit-btn{
+	width: 195px;
+}
+.with-discount button.white{
+	height: 46px;
+	padding: 0 10px;
+}
+.with-discount button{
+	margin: 10px 12px 0;
+}
+.mb-35{
+	margin-bottom: 35px;
+}
+.text-img{
+	margin-bottom: 35px;
+}
+.text-img > p{
+	font-size: 16px;
+	color: #333333;
+}
+.text-img > img{
+	padding: 10px;
+}
+.reasons-block.one-category{
+	background: url('../img/reason-block.jpg') 0 0 no-repeat;
+	background-size: cover;
+	margin-bottom: 30px;
+}
+.reasons-block.one-category h2{
+	color: #fff !important;
+	margin-top: 30px;
+	color: rgba(255,255,255,.9);
+}
+.reasons-block.one-category .reasons-box p{
+	color: rgba(255,255,255,.9);
+}
+.reasons-block.one-category .reasons-box:hover a{
+	background: transparent;
+	color: rgba(255,255,255,.9);
+    border: 1px solid #fbc743;
+    cursor: default;
+}
+.reasons-list{
+	width: 50%;
+	float: left;
+	padding: 20px 25px 35px;
+}
+.reasons-list > li{	
+	color: rgba(255,255,255,.9);
+	font-size: 16px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+.reasons-list > li > i{
+	font-size: 22px;
+	color: #fbc743;
+	margin-right: 10px;
+}
+.quote{	
+	margin-bottom: 5px;
+	line-height: 25px;
+}
+.quote span{
+	font: 800 16px "ElektraTextPro_B", sans-serif;
+	color: #fbc743;
+	position: relative;
+	padding-left: 10px;
+}
+.quote span:before{
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 5px;
+	height: 5px;
+	background: #fbc743;
+	border-radius: 50%; 
+}
+.schema > li{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 60px;
+	position: relative;
+}
+.schema > li:not(:last-child) > i:after{
+	content: '';
+	width: 2px;
+	height: 50px;
+	position: absolute;
+	top: 100%;
+	left: 50%; 
+	background: #cecece;
+}
+.schema > li > i{
+	color: #fbc743;
+	font-size: 50px;
+	margin-right: 15px;
+	position: relative;
+}
+.schema > li > p{
+	font-size: 20px;
+	color: #333333;
+}
+p.ol{
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+p.ol:before{
+	content: '';
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 5px;
+	border-radius: 50%;
+	left: 0; 
+	background: #fbc743;
+}
+.banner{
+	padding: 50px;
+	background: url('../img/banner.jpg') 0 0 no-repeat;
+	background-size: cover;
+	margin-bottom: 35px;
+}
+.banner .text{
+	padding: 30px 55px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #333333;
+	background-color: #f4d50f;
+}
+.banner .text .tels{
+	font: 800 24px "ElektraTextPro_B", sans-serif;
+	margin-top: 5px;
+}
+.alphabet .title{
+	color: #f4d50f; 
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 7px;
+}
+.alphabet a{
+	font-size: 20px;
+	color: #333333;
+}
+.alphabet a:hover{
+	text-decoration: underline;
+}
+.alphabet .col-4{
+	height: 150px;
 }
