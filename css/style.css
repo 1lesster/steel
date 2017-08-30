@@ -203,20 +203,26 @@ select.city{
 	margin-left: 3px;
 	line-height: 1;
 }
-button.download{
-	padding: 10px 37px 10px 12px;	
+.main-nav > ul > li.download{
+
 }
-button.white{
+.main-nav > ul > li.download > a{
+	padding: 10px 37px 10px 12px;	
+	color: #000;
+	text-transform: inherit;
+}
+button.white,
+.main-nav > ul > li.white{
 	font: 400 14px "ElektraTextPro_R", sans-serif;
 	display: inline-block;
 	background: #fff;
 	border: 1px solid #f4d50f;
-	color: #000;
 	position: relative;
 	cursor: pointer;
 	height: 38px;
 }
-button.download span{
+button.download span,
+.main-nav > ul > li.white span{
 	position: absolute;
 	top: 50%;
 	right: 8px;
