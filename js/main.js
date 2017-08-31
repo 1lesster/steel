@@ -1,9 +1,9 @@
 $( document ).ready(function() {
     $('.start-slider').slick({
-    	draggable: false
-    	// appendArrows: $('.control'),
-    	// nextArrow: '<i class="slick-arrow demo-icon icon-arrow next"></i>',
-    	// prevArrow: '<i class="slick-arrow demo-icon icon-arrow prev"></i>'
+    	draggable: false,
+    	appendArrows: $('.control'),
+    	nextArrow: '<i class="slick-arrow demo-icon icon-arrow next"></i>',
+    	prevArrow: '<i class="slick-arrow demo-icon icon-arrow prev"></i>'
     });
 
     $('.hot-offers .sidebar-slider').slick({
