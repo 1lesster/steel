@@ -1,10 +1,11 @@
 $( document ).ready(function() {
-    $('.start-slider-wrap').slick({
-    	draggable: false,
-    	appendArrows: $('.control'),
-    	nextArrow: '<i class="slick-arrow demo-icon icon-arrow next"></i>',
-    	prevArrow: '<i class="slick-arrow demo-icon icon-arrow prev"></i>'
+    $('.start-slider').slick({
+    	draggable: false
+    	// appendArrows: $('.control'),
+    	// nextArrow: '<i class="slick-arrow demo-icon icon-arrow next"></i>',
+    	// prevArrow: '<i class="slick-arrow demo-icon icon-arrow prev"></i>'
     });
+
     $('.hot-offers .sidebar-slider').slick({
     	draggable: false,
     	nextArrow: '<i class="slick-arrow demo-icon icon-arrow next"></i>',
