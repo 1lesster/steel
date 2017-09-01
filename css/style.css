@@ -1108,15 +1108,18 @@ table.black-grey td{
 .thumbnail.for-sale .caption > .text > span{
 	font-size: 20px;
 }
-.thumbnail.for-sale > button{
+.thumbnail.for-sale > a{
+	display: block;
 	background-color: #f4d50f;
     width: 100%;
     height: 39px;
+    line-height: 36px;
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 16px;
     color: #333333;
+    text-align: center;
 }
 .about-page .start-form .form-heading{
 	font-size: 16px;
