@@ -2161,4 +2161,34 @@ p.ol:before{
 		width: 100%;
 		text-align: center;
 	}
+	.start-slider .slider-text{
+		font-size: 20px;
+	}
+	#text h2, section h2, #sidebar h2{
+		font-size: 22px;
+	}
+	.slogan-block .slogan h3{
+		font-size: 22px;
+	}
+	.slogan-block .slogan p{
+		font-size: 16px;
+	}
+	.slogan-block{
+		padding: 15px;
+	}
+	.about-heading h3{
+		font-size: 24px;
+	}
+	.about-heading h3 > span{
+		font-size: 38px;
+	}
+
+}
+@media screen and (max-width: 450px) {
+	.start-section.main{
+		background-size: 1000%;
+	}
+	.reasons-block .reasons-box{
+		width: 100%;
+	}
 }
