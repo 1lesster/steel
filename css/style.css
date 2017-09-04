@@ -695,7 +695,7 @@ table.black-grey{
 	width: 100%;
 	font-size: 14px;
 }
-table.black-grey thead td{
+table.black-grey thead th{
 	background-color: #000000;
 	color: #fff;
 	font-weight: 400;
@@ -1215,6 +1215,7 @@ table.black-grey td{
 	background: url('../img/tetra-bg-1.jpg') 0 0 no-repeat;
 	padding: 35px 20px; 
 	color: #ffffff;
+	background-size: cover;
 }
 .tetra-block > li.grey{
 	background: #ebebeb;
@@ -1365,7 +1366,7 @@ form.contacts-form .form-heading{
     color: #939393;
     padding-left: 20px;
 }
-form.question > .submit-btn{
+.question .submit-btn{
 	width: 220px;
 	margin-left: 30px;
 }
@@ -1996,6 +1997,11 @@ p.ol:before{
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+.about-p{
+	font-size: 20px;
+    color: #2a2a2a;
+    margin-bottom: 25px;
+}
 /*ADAPTIVE*/
 @media screen and (max-width: 1200px){
 	.contact-block{
@@ -2004,6 +2010,26 @@ p.ol:before{
 	}
 }
 @media screen and (max-width: 1139px) {
+	.schema,
+	.schema + p,
+	p.ol + p{
+		padding: 0 15px;
+	}
+	.gilyatina-start{
+		padding-left: 25px;
+	}
+	.map-block, .social{
+		margin: 0 15px 30px;
+	}
+	.col-3{
+		width: 33.33333333%;
+	}
+	.thumbnail > button .icon{
+		right: 25%;
+	}
+	p.ol{
+		margin: 0 15px 20px;
+	}
 	#sidebar{
 		display: none;
 	}	
@@ -2017,8 +2043,9 @@ p.ol:before{
 	.logo-block > h1{
 		display: none;
 	}
-	.reasons-block{
-		margin: 0 15px;
+	.reasons-block,
+	.row{
+		margin: 0;
 	}
 	.main-nav > ul > li > a{
 		font-size: 12px;
@@ -2032,15 +2059,68 @@ p.ol:before{
 	.contact-text{
 		font-size: 10px;
 	}
+	form.inline-form{
+		width: auto;
+		margin: 20px;
+		padding: 20px 10px;
+	}
+	.user-review{
+		margin: 0 15px 20px;
+	}
+	.start-section.one-category{
+		max-height: 100%;
+	}
+	.vacancies-heading, 
+	.contacts-heading,
+	.vacancies-type,
+	.vacancies-content{
+		padding: 0 15px;
+	}
 }
 @media screen and (max-width: 900px) {
+	.vacancies-type > button:not(:last-child){
+		margin-right: auto;
+	}
+	.vacancies-type > button{
+		margin: 15px auto;
+		display: block;
+		float: none;
+	}
+
+	.col-4{
+		width: 50%;
+	}
+	.gilyatina-start h3{
+		font-size: 30px;
+	}
+	.gilyatina-start{
+		padding: 0 15px;
+	}
+	.gilyatina-cutting,
+	.gilyatina-services{
+		margin: 20px 15px;
+	}
+	.gilyatina-advantages > li{
+		margin: 0 15px 8px;
+	}
+	.gilyatina-start > img{
+		display: block;
+		float: none;
+		margin: 0 auto;
+	}
+	#crumbs{
+		padding-left: 15px;
+	}
+	.start-section #crumbs{
+		text-align: left;
+	}
+	.col-3{
+		width: 50%;
+	}
 	.container{
 		max-width: 100%;
 	}
-	{
-		width: 50%;
-
-	}
+	
 	header .contact-wrap,
 	header .logo-block{
 		width: 50%;
@@ -2189,6 +2269,7 @@ p.ol:before{
 	}
 	.slogan-block{
 		padding: 15px;
+		margin: 0 15px;
 	}
 	.about-heading h3{
 		font-size: 24px;
@@ -2196,7 +2277,131 @@ p.ol:before{
 	.about-heading h3 > span{
 		font-size: 38px;
 	}
-
+	.reasons-box.custom{
+		padding: 0 15px;
+	}
+	
+	form.inline-form .form-input,
+	form.question > .submit-btn{
+		display: block;
+		margin: 10px auto;
+	}
+	.tetra-block > li{
+		width: 100%;
+		height: auto;
+	}
+	.tetra-block > li.grey{
+		padding: 20px;
+	}
+	.start-section.about-page .about-start{
+		min-height: auto;
+	}
+	.play-block{
+		display: none;
+	}
+	.about-p{
+		padding: 0 15px;
+	}
+	.factories-block .factories{
+		margin: 15px 25px;
+	}
+	.tetra-block .quote-block p{
+		font-size: 12px;
+	}
+	.tetra-block .quote-block .num{
+		font-size: 20px;
+	}
+	.review-form.inline-form .form-input{
+		display: block;
+		margin: 10px auto;
+		float: none;
+	}
+	.review-form.inline-form .flex-between{
+		display: block;
+	}
+	.review-form.inline-form .input-block{
+		width: 100%;
+	}
+	.review-form.inline-form textarea,
+	.contacts-form.inline-form textarea{
+		width: 220px;
+		max-width: 220px;
+		display: block;
+		margin: 0 auto;
+	}
+	.review-form.inline-form .submit-btn{
+		margin: 10px auto;
+		display: block;
+	}
+	.heading-block.coments{
+		display: block;
+		text-align: center;
+	}
+	.heading-block.coments > img{
+		display: inline-block;
+	}
+	.heading-block.coments .text-block{
+		float: none;
+		padding: 0 15px;
+	}
+	.contacts-form input,
+	.contacts-form textarea,
+	.contacts-form .submit-btn{
+		float: none !important;
+		display: block;
+		margin: 10px auto !important;
+	}
+	.map-block{
+		height: 300px;
+	}
+	.vacancies-heading, .contacts-heading{
+		padding-left: 20px;
+	}
+	.text-block{
+		float: none;
+	}
+	.heading-block.delivery,
+	.delivery-form .flex-between{
+		display: block;
+		padding: 0 20px;
+		text-align: center;
+	}
+	.heading-block.delivery img{
+		display: inline-block;
+		width: 60%;
+	}
+	p.custom,
+	.delivery-payment{
+		padding: 0 15px;
+	}
+	.tetra-block.delivery .caret-grey:before,
+	.yellow-grey:before{
+		display: none;
+	}
+	.tetra-block.delivery li.yellow{
+		padding-bottom: 15px;
+	}
+	.input-block{
+		width: 100%;
+	}
+	.inline-form .form-input, 
+	.question > .submit-btn{
+		float: none;
+	}
+	.delivery-form input.address{
+		width: 220px;
+	}
+	.delivery-payment p.custom{
+		width: 100%;
+		overflow: hidden;
+	}
+	.banner, .banner .text{
+		padding: 15px;
+		font-size: 16px;
+	}
+	.banner .text .tels{
+		font-size: 20px;
+	}
 }
 @media screen and (max-width: 450px) {
 	.start-section.main{
@@ -2204,5 +2409,20 @@ p.ol:before{
 	}
 	.reasons-block .reasons-box{
 		width: 100%;
+	}
+	.col-3, .col-6, .col-4{
+		width: 100%;
+	}
+	.text-img > img{
+		width: 70%;
+	}
+	.text-img > p{
+		padding: 0 15px;
+	}
+	.reasons-list{
+		width: 100%;
+	}
+	.alphabet .col-4{
+		height: auto;
 	}
 }
