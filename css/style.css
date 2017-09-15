@@ -31,6 +31,24 @@ body{
 	font-family: "ElektraTextPro_R", sans-serif;
 	font-weight: 400;
 }
+.one-product-text p{
+	margin-bottom: 25px;
+}
+.one-product-text li{
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+.one-product-text li:before{
+	content: '';
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 5px;
+	border-radius: 50%;
+	left: 0; 
+	background: #fbc743;
+}
 .container{
 	max-width: 1139px;
     width: 100%;

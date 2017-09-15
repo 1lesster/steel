@@ -42,12 +42,19 @@ $( document ).ready(function() {
     $('.catalog-content').css("height", navHeight);
 
 
-    $(".certificate a").click(function(event) {
+    $(".catalog-nav a").click(function(event) {
         event.preventDefault();
-        
-        var imgId = $(this).attr("href");
-
-        $(imgId).css("display", "block");
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        if($(document).width() > 640){
+            $(".catalog-content").not(tab).css("display", "none");
+            $(tab).fadeIn();
+        }else{
+            $(".catalog-nav a").next().remove();
+            var block = $(tab).clone();
+            $(this).after(block.attr('id', ''));
+        }
     });
 
     $(".modal-img .close").click(function(event) {
